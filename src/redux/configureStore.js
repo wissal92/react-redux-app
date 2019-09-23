@@ -3,9 +3,10 @@ import rootReducer from './reducers';
 //this will warn us if we accidentally mutated redux state:
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 
-export default function configStore(initialState){
+export default function configureStore(initialState){
     //this is the config to unable redux dev tools:
-    const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENTION_COMPOSE__ || compose;
+    const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+                             
     return createStore(
         rootReducer,
         initialState,
