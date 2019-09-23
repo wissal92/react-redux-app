@@ -43,3 +43,17 @@ ADDING FEATURES
 2)Enhance reducer
 3)Connect component
 4)Dispatch Action
+
+
+******************
+  REDUX-THUNK
+*****************
+thunk => is a function that wraps an expression to delay its evaluation.
+thunks enable us to avoid directly causing side effects in our actions, action creators
+or components. instead anything impure is wrapped in a thunk => by transferring our 
+side effects in a single point in the redux loop helps us a lot to debug our code.
+
+
++ MIDDLEWARES ARE NOT REQUIRED TO SUPPORT ASYNC IN REDUX BUT IT IS BETTER TO USE THEM
+SO THAT WE WOULD NOT HAVE TO PASS DISPATCH TO EACH CALL. THEY ARE INJECTED FOR US by
+THE THUNK MIDDLEWARE.
