@@ -67,3 +67,18 @@ HANDLE DIFFERENT PIECES OF THE STORE IN ISOLATION => THIS PATTERN IS CALLED
 
 =>EACH ACTION CAN BE HANDLED BY MULTIPE REDUCERS. EACH REDUCER CAN HANDLE MULTIPLE 
 ACTIONS.
+
+**************************
+TYPES OF COMPONENTS
+**************************
+there are 2 types of components:
+
+1) CONTAINER =>  + focus on how things work
+                 + Aware of REDUX
+                 + Subscribe to Redux STATE
+                 + Dispatch Redux ACTIONS
+
+2) PRESENTATIONAL => + Focus on how things look
+                     + unaware of Redux
+                     + read data from props
+                     +invoke callbacks on props

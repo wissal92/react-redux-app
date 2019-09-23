@@ -1,0 +1,45 @@
+*******************
+REACT-REDUX LIBRARY
+*******************
+=> TIES OUR REACT COMPONENTS TOGETHER TO REDUX. IT CONSISTS OF TWO CORE ITEMS:
+
+1) THE PROVIDER COMPONENT => attaches app to store and its is utilized in our app route
+by wrapping our entire app. This is how the provider component attaches our app to 
+the redux store.
+
+ex: <PROVIDER store={ourStore}>
+      <App/>
+    </Provider>
+
+2)CONNECT FUNCTION => wraps our component so it's connected to the redux store.
+
+ex: export default connect(mapStateToProps, mapDispatchToProps)(OurComponent);
+
+
+******************
+USEFUL TIPS
+*****************
++ EVERY TIME THE COMPONENT IS UPDATED, THE mapStateToProps FUNCTIONS IS CALLED.
+SO IF WE ARE DOING SOMETHING EXPENSIVE IT IS BETTER TO USE A LIBRARY LIKE RESELECT
+FOR MEMOIZING.
+
+********************
+INITIAL REDUX SETUP
+********************
+1)Create action
+2)Create reducer
+3)Create root reducer
+4)Configure store
+5)instantiate store
+6)connect component
+7)pass props via connect
+8)dispatch action
+
+
+*****************
+ADDING FEATURES
+*****************
+1)Create action
+2)Enhance reducer
+3)Connect component
+4)Dispatch Action
